@@ -1,198 +1,111 @@
-chapter = 1
+// 1. Alerts
+alert("Welcome to JavaScript");
+alert("My name is Huzafa");
 
-// QUESTION=1
-// alert("Welcome to JavaScript!");
+// 2. Variables for Strings
+var name = "Huzafa";
+var city = "Karachi";
 
-// QUESTION=2
-// alert("lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor."); 
+console.log(name);
+console.log(city);
 
-// question=3
-// alert("Welcome to JavaScript!\nHappy Coding!");
+// 3. Variables for Numbers
+var age = 18;
+var marks = 450;
 
-// QUESTION=4
-// alert("Welcome to JavaScript!");
-// alert("Happy Coding!");
+console.log(age);
+console.log(marks);
 
+// 4. Variable Names Legal & Illegal
+var userName = "Ali";
+var user_age = 20;
+var $price = 100;
 
-CHAPTER = 2
+console.log(userName);
+console.log(user_age);
+console.log($price);
 
-// // QUESTION=1
-// var firstName = "John";
+// 5. Math Expressions (Operators)
+var a = 10;
+var b = 5;
 
-// // QUESTION=2
-// var lastName = "Doe";
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
 
-// // QUESTION=3
-// var fullName = firstName + " " + lastName;
+// 6. Increment / Decrement
+var num = 10;
 
-// // QUESTION=4
-// alert(fullName);
+num++;
+console.log(num);
 
-// QUESTION=5
-// studentName = "John Doe";
-// studentAge = 15;
-// studentCourse = "Certified Mobile Application Development";
-// alert("Name: " + studentName);
-// alert("Age: " + studentAge);
-// alert("Course: " + studentCourse);
+num--;
+console.log(num);
 
-// question=6
-// var pizza = "PIZZA\nPIZZ\nPIZ\nPI\nP";
-// alert(pizza);
+// 7. Parentheses in Math
+var result = (10 + 5) * 2;
+console.log(result);
 
-// question=7
-// var email = "myemail@example.com";
-// alert("My email address is " + email);  
+// 8. Concatenating Strings
+var firstName = "Huzafa";
+var lastName = "Kareem";
 
-// question=8
-// var book = "A smarter way to learn JavaScript";
-// alert("I am trying to learn from the book " + book);
+console.log(firstName + " " + lastName);
 
-CHAPTER = 3
+// 9. Prompts
+var userName = prompt("Enter your name");
+console.log("Hello " + userName);
 
-// QUESTION=1
-// var age = 25;
-// alert("I am " + age + " years old");
+// 10. if Statement
+var age = 18;
 
-// QUESTION=2   
-// var visitCount = 14;
-// alert("You have visited this site " + visitCount + " times");
+if(age >= 18){
+console.log("You are adult");
+}
 
-// QUESTION=3   
-// var birthYear = 1990;
-// document.write("My birth year is " + birthYear + "<br>");
-// document.write("Data type of my declared variable is number");
+// 11. Comparison Operators
+var a = 10;
+var b = 20;
 
-// // QUESTION=4
-// var visitorName = "John Doe";
-// var productTitle = "T-shirt";
-// var quantity = 5;
-// document.write(visitorName + " ordered " + quantity + " " + productTitle + "(s) on XYZ Clothing store");
+console.log(a == b);
+console.log(a < b);
+console.log(a > b);
 
-CHAPTER = 4
+// 12. if else / else if
+var marks = 70;
 
-// QUESTION=1
-// Var, let, const;
+if(marks >= 80){
+console.log("Grade A");
+}
+else if(marks >= 60){
+console.log("Grade B");
+}
+else{
+console.log("Fail");
+}
 
-// // QUESTION=2
-// Legal variable names:
-// var myVariable;
-// var _myVariable;
-// var $myVariable;
-// let variable123;
-// const myVariableName;
+// 13. Multiple Conditions
+var age = 20;
+var city = "Karachi";
 
-// Illegal variable names:
-// var 123variable;
-// var my-variable;
-// var my variable;
-// letyVariable;
-// const myVariable!;
+if(age >= 18 && city == "Karachi"){
+console.log("You can apply");
+}
 
-// // QUESTION=3   
-// document.write("<h1>Rules for naming JS variables</h1>");
-// document.write("Variable names can only contain letters, numbers, underscores, and dollar signs. For example: $my_1stVariable<br>");
-// document.write("Variables must begin with a letter, underscore, or dollar sign. For example: $name, _name, or name<br>");
-// document.write("Variable names are case sensitive.<br>");
-// document.write("Variable names should not be JS keywords.");
+// 14. Nested if
+var age = 20;
+var hasCNIC = true;
 
-CHAPTER = 5
+if(age >= 18){
+ if(hasCNIC){
+  console.log("You can vote");
+ }
+}
 
-// QUESTION=1
-// var num1 = 3;
-// var num2 = 5;
-// var sum = num1 + num2;
-// document.write("The sum of " + num1 + " and " + num2 + " is " + sum);
+// 15. Arrays
+var fruits = ["Apple","Mango","Banana","Orange"];
 
-// question=2
-// var num1 = 10;
-// var num2 = 5;    
-// var difference = num1 - num2;
-// document.write("The difference of " + num1 + " and " + num2 + " is " + difference);
-
-// question=3
-// let myVariable = 10;
-// myVariable++;
-// document.write("Value after increment is: " + myVariable + "<br>");
-// myVariable += 7;
-// document.write("Value after addition is: " + myVariable + "<br>");
-// myVariable--;
-// document.write("Value after decrement is: " + myVariable + "<br>");
-// myVariable %= 3;
-// document.write("The remainder is: " + myVariable);
-
-
-// Question=4
-// var ticketPrice = 600;
-// var totalCost = ticketPrice * 5;
-// document.write("Total cost to buy 5 tickets to a movie is " + totalCost + " PKR");
-
-
-// Question=5
-// // document.write("Table of 4<br>");
-// // for (var i = 1; i <= 10; i++) {
-// //     document.write("4 x " + i + " = " + (4 * i) + "<br>");
-// // }    
-
-
-question=6
-// var celsiusTemp = 25;
-// var fahrenheitTemp = (celsiusTemp * 9/5) + 32;
-// document.write(celsiusTemp + "°C is " + fahrenheitTemp + "°F<br>");
-// var fahrenheitTemp2 = 70;
-// var celsiusTemp2 = (fahrenheitTemp2 - 32) * 5/9;
-// document.write(fahrenheitTemp2 + "°F is " + celsiusTemp2 + "°C");
-
-question=7  
-// var item1Price = 650;
-// var item2Price = 100;
-// var item1Quantity = 3;
-// var item2Quantity = 7;
-// var shippingCharges = 100;
-// var totalCost = (item1Price * item1Quantity) + (item2Price * item2Quantity) + shippingCharges;
-// document.write("Price of item 1 is " + item1Price + "<br>");
-// document.write("Quantity of item 1 is " + item1Quantity + "<br>");
-// document.write("Price of item 2 is " + item2Price + "<br>");
-// document.write("Quantity of item 2 is " + item2Quantity + "<br>");
-// document.write("Shipping Charges " + shippingCharges + "<br><br>");
-// document.write("Total cost of your order is " + totalCost + " PKR");
-
-question=8
-// var totalMarks = 980;
-// var marksObtained = 804;
-// var percentage = (marksObtained / totalMarks) * 100;
-// document.write("Total marks: " + totalMarks + "<br>");
-// document.write("Marks obtained: " + marksObtained + "<br>");
-// document.write("Percentage: " + percentage.toFixed(2) + "%");
-
-question=9
-// var usDollars = 10;
-// var saudiRiyals = 25;
-// var totalPKR = (usDollars * 104.80) + (saudiRiyals * 28);
-// document.write("Total currency in PKR: " + totalPKR);
-
-question=10
-// var num = 5;
-// var result = ((num + 5) * 10) / 2;
-// document.write("The result is: " + result);
-
-question=11
-// var currentYear = new Date().getFullYear();
-// var birthYear = 1990;
-// var age = currentYear - birthYear;
-// document.write("Your age is: " + age);
-
-question=12
-// var radius = 20;
-// var circumference = 2 * Math.PI * radius;
-// var area = Math.PI * Math.pow(radius, 2);   
-// document.write("Radius of a circle: " + radius + "<br>");
-// document.write("The circumference is: " + circumference.toFixed(2) + "<br>");
-// document.write("The area is: " + area.toFixed(2));
-
-question=13
-// var favoriteSnack = "Chocolate Chip";
-// var currentAge = 15;
-// var maxAge = 65;
-// var amountPerDay = 3;
-// var totalSnacksNeeded = (maxAge - currentAge) * 365 * amountPerDay;
+console.log(fruits);
+console.log(fruits[0]);
+console.log(fruits[2]);
